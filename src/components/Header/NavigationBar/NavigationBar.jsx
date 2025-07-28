@@ -32,7 +32,7 @@ function NavigationBar() {
 
                             <NavLink className="nav-link" to="/">
                             
-                                <i class="bi bi-house-door-fill pe-1"></i>
+                                <i className="bi bi-house-door-fill pe-1"></i>
                                 
                                 <span>Home</span>
                                 
@@ -44,7 +44,7 @@ function NavigationBar() {
 
                             <NavLink className="nav-link" to="/products">
 
-                                <i class="bi bi-bag-fill pe-1"></i>
+                                <i className="bi bi-bag-fill pe-1"></i>
                             
                                 <span>Products</span>
                             
@@ -56,7 +56,7 @@ function NavigationBar() {
 
                             <NavLink className="nav-link" to="/about">
 
-                                <i class="bi bi-building-fill pe-1"></i>
+                                <i className="bi bi-building-fill pe-1"></i>
                             
                                 <span>About Us</span>
                             

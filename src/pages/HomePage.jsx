@@ -12,7 +12,7 @@ function HomePage() {
 
                 <h1 className="text-primary">
                     
-                    <i class="bi bi-house-door-fill pe-3"></i>
+                    <i className="bi bi-house-door-fill pe-3"></i>
 
                     <span>React Router Store</span>
                     

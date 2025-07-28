@@ -14,7 +14,7 @@ function Products() {
 
                 <h1 className="text-center text-primary">
                     
-                    <i class="bi bi-bag-fill pe-3"></i>
+                    <i className="bi bi-bag-fill pe-3"></i>
 
                     <span>Our Products</span>
                     
@@ -44,7 +44,7 @@ function Products() {
 
                                                 <div className="py-1">
 
-                                                    <i class="bi bi-bookmark-fill pe-1"></i>{product.category}
+                                                    <i className="bi bi-bookmark-fill pe-1"></i>{product.category}
                                                     
                                                 </div>
 
@@ -60,7 +60,7 @@ function Products() {
 
                                                 <div className="text-success py-1">
                                                     
-                                                    <i class="bi bi-tag-fill pe-1"></i>{`${product.price} $`}
+                                                    <i className="bi bi-tag-fill pe-1"></i>{`${product.price} $`}
                                                     
                                                 </div>
 

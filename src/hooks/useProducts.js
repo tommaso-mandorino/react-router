@@ -12,13 +12,7 @@ function useProducts() {
 
     useEffect(() => {
 
-        fetchData(endpoints.fakeStoreApi.products)
-
-            .then(data => {
-
-                setProducts([...data]);
-
-            });
+        fetchData(endpoints.fakeStoreApi.products, setProducts);
 
     }, []);
 

@@ -12,7 +12,7 @@ function AboutUs() {
 
                 <h1 className="text-primary">
                     
-                    <i class="bi bi-building-fill pe-3"></i>
+                    <i className="bi bi-building-fill pe-3"></i>
 
                     <span>About Us</span>
 

@@ -1,34 +1,30 @@
-function fetchData(url) {
+function fetchData(url, dataSetter) {
 
-    return new Promise(promiseResolve => {
+    fetch(url)
 
-        fetch(url)
+        .then(response => {
 
-            .then(response => {
+            if (!response.ok) {
 
-                if (!response.ok) {
+                throw new Error(`Server responded with ${response.status} status code.`);
 
-                    throw new Error(`Server responded with ${response.status} status code.`);
+            }
 
-                }
+            return response.json();
 
-                return response.json();
+        })
 
-            })
+        .then(data => {
 
-            .then(data => {
+            dataSetter([...data]);
 
-                promiseResolve(data);
+        })
 
-            })
+        .catch(error => {
 
-            .catch(error => {
+            console.error(error.message);
 
-                console.error(error.message);
-
-            });
-
-    });
+        });
 
 }
 
