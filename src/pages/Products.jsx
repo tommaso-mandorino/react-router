@@ -2,6 +2,10 @@ import useProducts from "../hooks/useProducts.js";
 
 
 
+import Header from '../components/Header/Header.jsx';
+
+
+
 function Products() {
 
     const products = useProducts();
@@ -10,59 +14,65 @@ function Products() {
 
         <>
 
-            <div className="container my-5">
+            <Header />
 
-                <h1 className="text-center text-primary">Our Products</h1>
+            <main>
 
-                <div className="container">
+                <div className="container my-5">
 
-                    <div className="row py-5">
+                    <h1 className="text-center text-primary">Our Products</h1>
 
-                        {
+                    <div className="container">
 
-                            products?.map(product => {
+                        <div className="row py-5">
 
-                                return (
+                            {
 
-                                    <div key={`product-${product.id}`} className="col col-lg-6 col-xxl-4 g-3">
+                                products?.map(product => {
 
-                                        <div className="card h-100">
+                                    return (
 
-                                            <div className="ratio ratio-1x1">
+                                        <div key={`product-${product.id}`} className="col col-lg-6 col-xxl-4 g-3">
 
-                                                <img className="card-img-top h-100 p-5" style={{objectFit: 'contain'}} src={product.image} alt={`${product.title} photo`} />
+                                            <div className="card h-100">
 
-                                            </div>
+                                                <div className="ratio ratio-1x1">
 
-                                            <div className="card-body bg-primary-subtle">
+                                                    <img className="card-img-top h-100 p-5" style={{objectFit: 'contain'}} src={product.image} alt={`${product.title} photo`} />
 
-                                                <div className="py-1">{product.category}</div>
+                                                </div>
 
-                                                <div className="text-end text-info-emphasis py-1">{`${product.rating.rate} (${product.rating.count})`}</div>
+                                                <div className="card-body bg-primary-subtle">
 
-                                                <h5 className="card-title text-center text-primary py-1">{product.title}</h5>
+                                                    <div className="py-1">{product.category}</div>
 
-                                                <p className="card-text py-1">{product.description}</p>
+                                                    <div className="text-end text-info-emphasis py-1">{`${product.rating.rate} (${product.rating.count})`}</div>
 
-                                                <div className="text-success py-1">{`${product.price} $`}</div>
+                                                    <h5 className="card-title text-center text-primary py-1">{product.title}</h5>
+
+                                                    <p className="card-text py-1">{product.description}</p>
+
+                                                    <div className="text-success py-1">{`${product.price} $`}</div>
+
+                                                </div>
 
                                             </div>
 
                                         </div>
 
-                                    </div>
+                                    );
 
-                                );
+                                })
 
-                            })
+                            }
 
-                        }
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </main>
 
         </>
 

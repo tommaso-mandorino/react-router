@@ -12,23 +12,19 @@ function App() {
 
   return (
 
-    <>
+    <BrowserRouter>
 
-      <BrowserRouter>
+      <Routes>
 
-        <Routes>
+        <Route path="/" Component={HomePage} />
 
-          <Route path="/"         Component={HomePage} />
+        <Route path="/about" Component={AboutUs} />
 
-          <Route path="/about"    Component={AboutUs}  />
+        <Route path="/products" Component={Products} />
 
-          <Route path="/products" Component={Products} />
+      </Routes>
 
-        </Routes>
-
-      </BrowserRouter>
-
-    </>
+    </BrowserRouter>
 
   );
 

@@ -2,33 +2,42 @@ import { Link } from 'react-router-dom';
 
 
 
+import Header from '../components/Header/Header.jsx';
+
+
 function AboutUs() {
 
     return (
 
         <>
 
-            <div className="container my-5 text-center">
+            <Header />
 
-                <h1 className="text-primary">About Us</h1>
+            <main>
 
-                <p className="fs-4 py-5">
+                <div className="container my-5 text-center">
 
-                    We are a new online store founded in 2025 aiming to sell useful products for everyone.
+                    <h1 className="text-primary">About Us</h1>
 
-                    <br />
+                    <p className="fs-4 py-5">
 
-                    Our pricese are very competitive and our products have the best quality on the market!
+                        We are a new online store founded in 2025 aiming to sell useful products for everyone.
 
-                    <br />
+                        <br />
 
-                    <br />
+                        Our pricese are very competitive and our products have the best quality on the market!
 
-                    <Link className="btn btn-primary" to="/products">Start shopping!</Link>
+                        <br />
 
-                </p>
+                        <br />
 
-            </div>
+                        <Link className="btn btn-primary" to="/products">Start shopping!</Link>
+
+                    </p>
+
+                </div>
+
+            </main>
 
         </>
 
