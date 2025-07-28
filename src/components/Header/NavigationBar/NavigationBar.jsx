@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -10,13 +10,13 @@ function NavigationBar() {
 
             <div className="container-fluid">
 
-                <Link className="navbar-brand text-primary d-flex align-items-center" to="/">
+                <NavLink className="navbar-brand text-primary d-flex align-items-center" to="/">
 
                     <img src="/react.svg" alt="React logo" />
 
                     <span className="ps-1">React Router Store</span>
                     
-                </Link>
+                </NavLink>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -30,19 +30,19 @@ function NavigationBar() {
 
                         <li className="nav-item">
 
-                            <Link className="nav-link" to="/">Home</Link>
+                            <NavLink className="nav-link" to="/">Home</NavLink>
 
                         </li>
 
                         <li className="nav-item">
 
-                            <Link className="nav-link" to="/products">Products</Link>
+                            <NavLink className="nav-link" to="/products">Products</NavLink>
 
                         </li>
 
                         <li className="nav-item">
 
-                            <Link className="nav-link" to="/about">About Us</Link>
+                            <NavLink className="nav-link" to="/about">About Us</NavLink>
 
                         </li>
 
