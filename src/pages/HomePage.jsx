@@ -2,39 +2,29 @@ import { Link } from 'react-router-dom';
 
 
 
-import Header from '../components/Header/Header.jsx';
-
-
-
 function HomePage() {
 
     return (
 
-        <>
+        <main>
 
-            <Header />
+            <div className="container my-5 text-center">
 
-            <main>
+                <h1 className="text-primary">React Router Store</h1>
 
-                <div className="container my-5 text-center">
+                <div className="py-5">
 
-                    <h1 className="text-primary">React Router Store</h1>
+                    <h2 className="text-success">Welcome to this online store!</h2>
 
-                    <div className="py-5">
+                    <br />
 
-                        <h2 className="text-success">Welcome to this online store!</h2>
-
-                        <br />
-
-                        <h3 className="text-primary-emphasis"><Link to="/products">Here</Link> you will find different products for all your needs!</h3>
-
-                    </div>
+                    <h3 className="text-primary-emphasis"><Link to="/products">Here</Link> you will find different products for all your needs!</h3>
 
                 </div>
 
-            </main>
+            </div>
 
-        </>
+        </main>
 
     )
 
