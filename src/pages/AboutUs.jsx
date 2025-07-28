@@ -10,7 +10,13 @@ function AboutUs() {
 
             <div className="container my-5 text-center">
 
-                <h1 className="text-primary">About Us</h1>
+                <h1 className="text-primary">
+                    
+                    <i class="bi bi-building-fill pe-3"></i>
+
+                    <span>About Us</span>
+
+                </h1>
 
                 <p className="fs-4 py-5">
 

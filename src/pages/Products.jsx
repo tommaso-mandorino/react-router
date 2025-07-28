@@ -12,7 +12,13 @@ function Products() {
 
             <div className="container my-5">
 
-                <h1 className="text-center text-primary">Our Products</h1>
+                <h1 className="text-center text-primary">
+                    
+                    <i class="bi bi-bag-fill pe-3"></i>
+
+                    <span>Our Products</span>
+                    
+                </h1>
 
                 <div className="container">
 
@@ -36,15 +42,27 @@ function Products() {
 
                                             <div className="card-body bg-primary-subtle">
 
-                                                <div className="py-1">{product.category}</div>
+                                                <div className="py-1">
 
-                                                <div className="text-end text-info-emphasis py-1">{`${product.rating.rate} (${product.rating.count})`}</div>
+                                                    <i class="bi bi-bookmark-fill pe-1"></i>{product.category}
+                                                    
+                                                </div>
+
+                                                <div className="text-end text-info-emphasis py-1">
+
+                                                    <i className="bi bi-star-fill pe-1"></i>{`${product.rating.rate} (${product.rating.count})`}
+                                                    
+                                                </div>
 
                                                 <h5 className="card-title text-center text-primary py-1">{product.title}</h5>
 
                                                 <p className="card-text py-1">{product.description}</p>
 
-                                                <div className="text-success py-1">{`${product.price} $`}</div>
+                                                <div className="text-success py-1">
+                                                    
+                                                    <i class="bi bi-tag-fill pe-1"></i>{`${product.price} $`}
+                                                    
+                                                </div>
 
                                             </div>
 

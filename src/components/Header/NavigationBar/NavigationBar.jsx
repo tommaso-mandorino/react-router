@@ -30,19 +30,37 @@ function NavigationBar() {
 
                         <li className="nav-item">
 
-                            <NavLink className="nav-link" to="/">Home</NavLink>
+                            <NavLink className="nav-link" to="/">
+                            
+                                <i class="bi bi-house-door-fill pe-1"></i>
+                                
+                                <span>Home</span>
+                                
+                            </NavLink>
 
                         </li>
 
                         <li className="nav-item">
 
-                            <NavLink className="nav-link" to="/products">Products</NavLink>
+                            <NavLink className="nav-link" to="/products">
+
+                                <i class="bi bi-bag-fill pe-1"></i>
+                            
+                                <span>Products</span>
+                            
+                            </NavLink>
 
                         </li>
 
                         <li className="nav-item">
 
-                            <NavLink className="nav-link" to="/about">About Us</NavLink>
+                            <NavLink className="nav-link" to="/about">
+
+                                <i class="bi bi-building-fill pe-1"></i>
+                            
+                                <span>About Us</span>
+                            
+                            </NavLink>
 
                         </li>
 

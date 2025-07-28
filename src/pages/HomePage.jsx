@@ -10,7 +10,13 @@ function HomePage() {
 
             <div className="container my-5 text-center">
 
-                <h1 className="text-primary">React Router Store</h1>
+                <h1 className="text-primary">
+                    
+                    <i class="bi bi-house-door-fill pe-3"></i>
+
+                    <span>React Router Store</span>
+                    
+                </h1>
 
                 <div className="py-5">
 
