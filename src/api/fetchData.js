@@ -16,7 +16,15 @@ function fetchData(url, dataSetter) {
 
         .then(data => {
 
-            dataSetter([...data]);
+            if (Array.isArray(data)) {
+
+                dataSetter([...data]);
+
+                return;
+
+            }
+
+            dataSetter({...data});
 
         })
 

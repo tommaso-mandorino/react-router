@@ -3,9 +3,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 import DefaultLayout from './layouts/DefaultLayout.jsx';
-import HomePage      from './pages/HomePage';
-import AboutUs       from './pages/AboutUs';
-import Products      from './pages/Products';
+
+import HomePage      from './pages/HomePage.jsx';
+import AboutUs       from './pages/AboutUs.jsx';
+import Products      from './pages/Products.jsx';
+import Product       from './pages/Product.jsx';
 
 
 
@@ -19,11 +21,13 @@ function App() {
 
         <Route element={<DefaultLayout />}>
 
-          <Route index           element={<HomePage />} />
+          <Route index               element={<HomePage />} />
 
-          <Route path="about"    element={<AboutUs />}  />
+          <Route path="about"        element={<AboutUs  />} />
 
-          <Route path="products" element={<Products />} />
+          <Route path="products"     element={<Products />} />
+
+          <Route path="products/:id" element={<Product  />} />
 
         </Route>
 

@@ -8,7 +8,7 @@ function HomePage() {
 
         <main>
 
-            <div className="container my-5 text-center">
+            <div className="container py-5 text-center">
 
                 <h1 className="text-primary">
                     

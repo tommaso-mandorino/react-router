@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 
-import endpoints from '../constants/endpoints.js';
+
 
 import fetchData from '../api/fetchData.js';
+import endpoints from '../constants/endpoints.js';
 
 
 
